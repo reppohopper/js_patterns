@@ -3,7 +3,7 @@
 ## Origin
 
 I originally learned about this pattern from, 
-"Functional Programming in JavaScript" by Luis Attencio [maybe this product listing works?](https://www.amazon.com/gp/product/1617292826/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), which pointed to a [brilliant post](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html] on the subject by Ben Cherry in a blog called "Adequately Good: Decent Programming Advice".)
+"Functional Programming in JavaScript" by Luis Attencio [maybe this product listing works?](https://www.amazon.com/gp/product/1617292826/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), which pointed to a [brilliant post](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) on the subject by Ben Cherry in a blog called "Adequately Good: Decent Programming Advice".
 
 The post is from 2010, but the patterns and structures demonstrated there, even in their pre-ES6 syntax, retain their relevance. The patterns is no less powerful now, as we can implement it in ES6+ and carry over their incredible ability to create modules with private state on the fly, even in environments like Google Apps Script which are particularly hostile to code modularity. 
 
