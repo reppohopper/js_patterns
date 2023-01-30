@@ -11,6 +11,9 @@ The post is from 2010, but the patterns and structures demonstrated there, even 
 ## Examples
 
 ### A working example of the module by closure pattern. 
+
+You can copy this code and run it in your favorite JS environment (browser, Node.js, replit.com) to play with these ideas and see how they work. 
+Each key concept is illustrated with at least one example, demonstrated through console logs. 
 ```
 const my_module = (function my_module_loader () {
    let exports = {}; // The one object to be returned. 
