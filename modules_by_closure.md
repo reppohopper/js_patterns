@@ -1,19 +1,10 @@
 # Module by closure pattern
 
-## Origin
-
-I originally learned about this pattern from, 
-"Functional Programming in JavaScript" by Luis Attencio [maybe this product listing works?](https://www.amazon.com/gp/product/1617292826/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), which pointed to a [brilliant post](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) on the subject by Ben Cherry in a blog called "Adequately Good: Decent Programming Advice".
-
-The post is from 2010, but the patterns and structures demonstrated there, even in their pre-ES6 syntax, retain their relevance. The patterns is no less powerful now, as we can implement it in ES6+ and carry over their incredible ability to create modules with private state on the fly, even in environments like Google Apps Script which are particularly hostile to code modularity. 
-
-
-## Examples
+I've used this pattern introduce much-needed encapusulation and modularity into larger scripts and applications in the Google Apps Script environment, which is inherently non-modular and does not have suport for anything like ES modules or CommonJS modules. Fun fact the following pattern is acutally how CommonJS works under the hood. 
 
 ### A working example of the module by closure pattern. 
 
-You can copy this code and run it in your favorite JS environment (browser, Node.js, replit.com) to play with these ideas and see how they work. 
-Each key concept is illustrated with at least one example, demonstrated through console logs. 
+Copy and paste this boilerplate to play with things and see how they work. Each key concept is illustrated with at least one example, demonstrated through console logs. 
 ```
 const my_module = (function my_module_loader () {
    let exports = {}; // The one object to be returned. 
@@ -48,3 +39,6 @@ my_modele.print_count // --> undefined
 
 
 ```
+## Source
+
+"Functional Programming in JavaScript" by Luis Attencio pointed to a [this post](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html) from Ben Cherry's blog,  "Adequately Good: Decent Programming Advice".
