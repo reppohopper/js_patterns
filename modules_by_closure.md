@@ -5,7 +5,7 @@ I've used this pattern introduce much-needed encapusulation and modularity into 
 ### A working example of the module by closure pattern. 
 
 Copy and paste this boilerplate to play with things and see how they work. Each key concept is illustrated with at least one example, demonstrated through console logs. 
-```
+```javascript
 const my_module = (function my_module_loader () {
    let exports = {}; // The one object to be returned. 
    let sth = 123; // Private, encapsulated data! 
